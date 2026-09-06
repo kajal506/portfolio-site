@@ -1,7 +1,5 @@
-/* Google Fonts से सुंदर फॉन्ट जोड़ना */
-@import url('https://googleapis.com');
 
-/* बेसिक सेटिंग्स */
+@import url('https://googleapis.com');
 * {
     margin: 0;
     padding: 0;
@@ -10,15 +8,14 @@
 }
 
 body {
-    background-color: #0f172a; /* मॉडर्न डार्क थीम बैकग्राउंड */
+    background-color: #0f172a; 
     color: #f8fafc;
     overflow-x: hidden;
 }
 
-/* शानदार नेविगेशन बार */
 header {
     background: rgba(15, 23, 42, 0.8);
-    backdrop-filter: blur(10px); /* धुंधला इफ़ेक्ट */
+    backdrop-filter: blur(10px); 
     position: fixed;
     width: 100%;
     top: 0;
@@ -40,7 +37,7 @@ nav {
     font-weight: 700;
     background: linear-gradient(to right, #38bdf8, #a855f7);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; /* ग्रेडिएंट टेक्स्ट */
+    -webkit-text-fill-color: transparent;
 }
 
 nav ul {
@@ -60,7 +57,6 @@ nav ul li a:hover, nav ul li a.active {
     color: #38bdf8;
 }
 
-/* हीरो सेक्शन (मुख्य स्क्रीन) */
 .hero {
     height: 100vh;
     display: flex;
@@ -92,7 +88,7 @@ nav ul li a:hover, nav ul li a.active {
     margin-right: auto;
 }
 
-/* शानदार बटन्स */
+
 .buttons {
     display: flex;
     justify-content: center;
@@ -102,7 +98,7 @@ nav ul li a:hover, nav ul li a.active {
 .btn {
     padding: 12px 28px;
     text-decoration: none;
-    border-radius: 50px; /* गोल बटन्स */
+    border-radius: 50px; 
     font-weight: 600;
     font-size: 16px;
     transition: all 0.3s ease;
@@ -116,7 +112,7 @@ nav ul li a:hover, nav ul li a.active {
 
 .btn-primary:hover {
     background: #0ea5e9;
-    transform: translateY(-3px); /* ऊपर उठने का एनीमेशन */
+    transform: translateY(-3px); 
 }
 
 .btn-secondary {
@@ -128,4 +124,25 @@ nav ul li a:hover, nav ul li a.active {
     border-color: #fff;
     background: rgba(255, 255, 255, 0.1);
     transform: translateY(-3px);
+}
+/* 1. Desktop Default (>768px) - Multi-column */
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Desktop: Multi-column (Charo cards ek line me) */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Mobile <= 768px: Stacked (Ek ke niche ek 1-column) */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
