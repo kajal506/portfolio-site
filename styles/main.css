@@ -126,7 +126,7 @@ nav ul li a:hover, nav ul li a.active {
     transform: translateY(-3px);
 }
 /* 1. Desktop Default (>768px) - Multi-column */
-.skills-container {
+.skills-grid {
   display: flex;
   flex-direction: row;
   justify-content: center;
