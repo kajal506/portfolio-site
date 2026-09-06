@@ -132,17 +132,19 @@ nav ul li a:hover, nav ul li a.active {
   justify-content: center;
   gap: 15px;
 }
+/* --- Skills Section Layout --- */
 
-/* Desktop: Multi-column (Charo cards ek line me) */
+/* Desktop view (charo cards side-by-side) */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
 }
 
-/* Mobile <= 768px: Stacked (Ek ke niche ek 1-column) */
+/* Mobile view <= 768px (ek ke niche ek stack) */
 @media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: 1fr !important;
+    gap: 12px;
   }
 }
