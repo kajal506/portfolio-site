@@ -1,0 +1,131 @@
+/* Google Fonts से सुंदर फॉन्ट जोड़ना */
+@import url('https://googleapis.com');
+
+/* बेसिक सेटिंग्स */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0f172a; /* मॉडर्न डार्क थीम बैकग्राउंड */
+    color: #f8fafc;
+    overflow-x: hidden;
+}
+
+/* शानदार नेविगेशन बार */
+header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px); /* धुंधला इफ़ेक्ट */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(to right, #38bdf8, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; /* ग्रेडिएंट टेक्स्ट */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #38bdf8;
+}
+
+/* हीरो सेक्शन (मुख्य स्क्रीन) */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.highlight {
+    background: linear-gradient(to right, #38bdf8, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #94a3b8;
+    margin-bottom: 35px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* शानदार बटन्स */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 50px; /* गोल बटन्स */
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #38bdf8;
+    color: #0f172a;
+    box-shadow: 0 4px 14px rgba(56, 189, 248, 0.4);
+}
+
+.btn-primary:hover {
+    background: #0ea5e9;
+    transform: translateY(-3px); /* ऊपर उठने का एनीमेशन */
+}
+
+.btn-secondary {
+    border: 2px solid #94a3b8;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}

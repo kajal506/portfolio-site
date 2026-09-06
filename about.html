@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Kajal's Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        /* इस पेज के लिए अतिरिक्त स्टाइल */
+        .content-section {
+            max-width: 800px;
+            margin: 120px auto 50px;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .content-section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #38bdf8;
+        }
+        .content-section p {
+            color: #94a3b8;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+        }
+        .skill-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Kajal's Portfolio</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-section">
+        <h2>About Me</h2>
+        <p>Hi, I am Kajal, a passionate Web Developer focused on crafting beautiful, interactive, and user-friendly digital experiences. I enjoy turning complex problems into simple and elegant code solutions.</p>
+        
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Git & GitHub</div>
+        </div>
+    </div>
+
+</body>
+</html>
